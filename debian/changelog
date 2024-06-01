@@ -1,5 +1,29 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-buengese-sgzip (0.0~git20220517.9bca1b6-4) unstable; urgency=medium
 
-  * Initial release
+  * add golang-github-buengese-sgzip-dev.lintian-overrides to ignore
+    lintian warning broken-gz sgzip/testdata/issue6550.gz
+    The gz is a deliberately broken in order to serve as a test.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Drew Parsons <dparsons@debian.org>  Mon, 28 Nov 2022 11:12:50 +0100
+
+golang-github-buengese-sgzip (0.0~git20220517.9bca1b6-3) unstable; urgency=medium
+
+  * debian/copyright: specify GO_LICENSE gunzip.go gunzip_test.go
+    gzip.go gzip_test.go README.md testdata/issue6550.gz testdata/test.json*
+    as covered by GO_LICENSE (BSD 3-clause), judging by upstream
+    commit 5bf237f on Oct 16, 2014.
+    See also https://github.com/buengese/sgzip/issues/1
+
+ -- Drew Parsons <dparsons@debian.org>  Wed, 23 Nov 2022 14:48:19 +0100
+
+golang-github-buengese-sgzip (0.0~git20220517.9bca1b6-2) unstable; urgency=medium
+
+  * add Klaus Post and The Go Authors to debian/copyright
+
+ -- Drew Parsons <dparsons@debian.org>  Sun, 20 Nov 2022 23:41:44 +0100
+
+golang-github-buengese-sgzip (0.0~git20220517.9bca1b6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1024436)
+
+ -- Drew Parsons <dparsons@debian.org>  Sat, 19 Nov 2022 13:59:30 +0100
